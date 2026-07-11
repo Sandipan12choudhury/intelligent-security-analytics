@@ -1,0 +1,91 @@
+.application-kpi-card{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    box-shadow:0 10px 24px rgba(30,41,59,.08);
+
+    transition:.25s;
+
+}
+
+.application-kpi-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.application-kpi-icon{
+
+    font-size:24px;
+
+    margin-bottom:14px;
+
+}
+
+.application-kpi-card h4{
+
+    margin:0;
+
+    font-size:15px;
+
+    color:#64748b;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+.application-kpi-card h2{
+
+    margin:14px 0 8px;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.application-kpi-card span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+    white-space:nowrap;
+
+}
+
+.red{
+
+    color:#ef4444;
+
+}
+
+.green{
+
+    color:#22c55e;
+
+}
+
+.orange{
+
+    color:#f59e0b;
+
+}
+
+.purple{
+
+    color:#7c3aed;
+
+}
+
+.blue{
+
+    color:#2563eb;
+
+}

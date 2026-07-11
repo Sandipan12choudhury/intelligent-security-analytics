@@ -1,0 +1,189 @@
+.executive-summary{
+
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+
+}
+
+/* ===================================================== */
+
+.summary-section{
+
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:22px;
+    background:#ffffff;
+
+}
+
+.summary-section h3{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:18px;
+
+    font-size:18px;
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+/* ===================================================== */
+
+.summary-list{
+
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+
+}
+
+.summary-row{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:15px;
+
+}
+
+.summary-row span:first-child{
+
+    color:#64748b;
+    font-weight:500;
+
+}
+
+.summary-row strong{
+
+    color:#0f172a;
+    font-size:16px;
+
+}
+
+/* ===================================================== */
+
+.risk-pill{
+
+    background:#f59e0b;
+    color:white;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+/* ===================================================== */
+
+.insight-list{
+
+    list-style:none;
+    padding:0;
+    margin:0;
+
+}
+
+.insight-list li{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 0;
+    border-bottom:1px solid #edf2f7;
+
+}
+
+.insight-list li:last-child{
+
+    border-bottom:none;
+
+}
+
+.insight-list strong{
+
+    color:#0f172a;
+    font-weight:600;
+
+}
+
+.insight-list span{
+
+    color:#334155;
+    text-align:right;
+
+}
+
+/* ===================================================== */
+
+
+
+.priority-section p{
+
+    margin-top:10px;
+    line-height:1.9;
+    color:#334155;
+
+}
+
+.priority-section strong{
+
+    color:#0f172a;
+
+}
+
+.summary-label{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:#475569;
+    font-weight:600;
+
+}
+
+.summary-label svg{
+
+    color:#2563eb;
+    font-size:15px;
+
+}
+
+.insight-title{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-weight:600;
+
+}
+
+.insight-title svg{
+
+    color:#2563eb;
+
+}
+
+.priority-section{
+
+    background:#eef5ff;
+
+    border-left:5px solid #2563eb;
+
+}
+
+.priority-section h3{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}

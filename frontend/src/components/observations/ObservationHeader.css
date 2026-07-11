@@ -1,0 +1,37 @@
+.observation-header{
+
+    margin-bottom:28px;
+
+}
+
+.observation-header h1{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    font-size:34px;
+
+    color:#0f172a;
+
+}
+
+.observation-header svg{
+
+    color:#2563eb;
+
+}
+
+.observation-header p{
+
+    margin-top:12px;
+
+    color:#64748b;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}

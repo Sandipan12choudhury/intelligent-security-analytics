@@ -1,0 +1,51 @@
+.dashboard-table {
+
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.dashboard-table th {
+
+    text-align: left;
+    padding: 16px;
+    background: #f5f7fb;
+    color: #374151;
+    font-weight: 600;
+
+}
+
+.dashboard-table td {
+
+    padding: 16px;
+    border-bottom: 1px solid #edf2f7;
+
+}
+
+.risk-badge {
+
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.risk-badge.high {
+
+    background: #dc2626;
+
+}
+
+.risk-badge.medium {
+
+    background: #f59e0b;
+
+}
+
+.risk-badge.low {
+
+    background: #16a34a;
+
+}

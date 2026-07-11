@@ -1,0 +1,82 @@
+.observation-filters{
+
+    display:grid;
+
+    grid-template-columns:
+    1.3fr
+    1fr
+    1fr
+    1fr
+    1fr;
+
+    gap:16px;
+
+    margin-bottom:30px;
+
+}
+
+.observation-filters input,
+.observation-filters select{
+
+    height:48px;
+
+    border:1px solid #dbe4ee;
+
+    border-radius:10px;
+
+    padding:0 14px;
+
+    font-size:13.5px;
+
+    background:#ffffff;
+
+    color:#334155;
+
+    transition:.25s;
+
+    min-width:0;
+
+}
+
+.observation-filters input::placeholder{
+
+    color:#94a3b8;
+
+}
+
+.observation-filters input:focus,
+.observation-filters select:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.10);
+
+}
+
+.observation-filters select option{
+
+    color:#0f172a;
+
+}
+
+@media(max-width:1300px){
+
+    .observation-filters{
+
+        grid-template-columns:1fr 1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .observation-filters{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

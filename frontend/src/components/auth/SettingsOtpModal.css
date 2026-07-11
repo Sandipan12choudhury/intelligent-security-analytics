@@ -1,0 +1,157 @@
+.settings-otp-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(15,23,42,.55);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:1000;
+
+    padding:24px;
+
+}
+
+.settings-otp-modal{
+
+    background:#ffffff;
+
+    border-radius:16px;
+
+    width:100%;
+
+    max-width:420px;
+
+    padding:28px;
+
+    box-shadow:0 20px 60px rgba(15,23,42,.25);
+
+}
+
+.settings-otp-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:10px;
+
+}
+
+.settings-otp-header h3{
+
+    font-size:19px;
+
+    color:#0f172a;
+
+    font-weight:700;
+
+}
+
+.settings-otp-header button{
+
+    border:none;
+
+    background:#f1f5f9;
+
+    color:#64748b;
+
+    width:32px;
+
+    height:32px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.settings-otp-header button:hover{
+
+    background:#e2e8f0;
+
+    color:#0f172a;
+
+}
+
+.settings-otp-subtext{
+
+    color:#64748b;
+
+    font-size:13.5px;
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+}
+
+.settings-otp-resend{
+
+    text-align:right;
+
+    margin-top:16px;
+
+}
+
+.settings-otp-confirm-btn{
+
+    width:100%;
+
+    margin-top:18px;
+
+    background:#165DFF;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.2s;
+
+}
+
+.settings-otp-confirm-btn:hover:not(:disabled){
+
+    background:#0c49d1;
+
+}
+
+.settings-otp-confirm-btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}

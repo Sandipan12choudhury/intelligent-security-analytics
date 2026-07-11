@@ -1,0 +1,389 @@
+.quadrant-card{
+
+    position:relative;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    box-shadow:0 8px 28px rgba(15,23,42,.08);
+
+    overflow:hidden;
+
+}
+
+.quadrant-card h3{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:0 0 24px;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.info-icon{
+
+    color:#94a3b8;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}
+
+.quadrant-chart{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+/* ---------------- Background ---------------- */
+
+.quad-critical{
+
+    fill:#fef2f2;
+
+}
+
+.quad-improve{
+
+    fill:#fffbeb;
+
+}
+
+.quad-stable{
+
+    fill:#fefce8;
+
+}
+
+.quad-optimized{
+
+    fill:#ecfdf5;
+
+}
+
+/* ---------------- Grid ---------------- */
+
+.grid{
+
+    stroke:#dbe7f3;
+
+    stroke-width:1;
+
+    stroke-dasharray:5 5;
+
+}
+
+.mid-line{
+
+    stroke:#94a3b8;
+
+    stroke-width:1.5;
+
+    stroke-dasharray:6 4;
+
+}
+
+/* ---------------- Axis ---------------- */
+
+.axis{
+
+    stroke:#475569;
+
+    stroke-width:2;
+
+}
+
+.axis-arrow{
+
+    fill:#475569;
+
+}
+
+.tick{
+
+    font-size:11px;
+
+    fill:#64748b;
+
+}
+
+.axis-title{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    fill:#334155;
+
+}
+
+/* ---------------- Quadrant Badges ---------------- */
+
+.badge{
+
+    stroke-width:1.5;
+
+}
+
+.critical{
+
+    fill:#ffffff;
+
+    stroke:#fca5a5;
+
+}
+
+.improve{
+
+    fill:#ffffff;
+
+    stroke:#fdba74;
+
+}
+
+.stable{
+
+    fill:#ffffff;
+
+    stroke:#cbd5e1;
+
+}
+
+.optimized{
+
+    fill:#ffffff;
+
+    stroke:#86efac;
+
+}
+
+.badge-text{
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+.critical-text{
+
+    fill:#dc2626;
+
+}
+
+.improve-text{
+
+    fill:#ea580c;
+
+}
+
+.stable-text{
+
+    fill:#64748b;
+
+}
+
+.optimized-text{
+
+    fill:#16a34a;
+
+}
+
+/* ---------------- Point ---------------- */
+
+.point-glow{
+
+    fill:#2563eb;
+
+    opacity:.18;
+
+}
+
+.point{
+
+    fill:#2563eb;
+
+    stroke:#ffffff;
+
+    stroke-width:3;
+
+}
+
+.point{
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.point:hover{
+
+    r:7;
+
+    filter:drop-shadow(0 0 6px rgba(37,99,235,.45));
+
+}
+
+/* ---------------- Floating Info Card ---------------- */
+
+.info-card{
+
+    position:absolute;
+
+    background:#ffffff;
+
+    padding:12px 15px;
+
+    border-radius:14px;
+
+    box-shadow:0 12px 24px rgba(15,23,42,.18);
+
+    width:160px;
+
+    transform:translate(-50%,0);
+
+    transition:.25s;
+
+    pointer-events:none;
+
+    z-index:5;
+
+}
+
+.info-card h4{
+
+    margin:0 0 8px;
+
+    color:#2563eb;
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+.info-card p{
+
+    margin:4px 0;
+
+    color:#334155;
+
+    font-size:11px;
+
+}
+
+/* ---------------- Footer ---------------- */
+
+.quadrant-footer{
+
+    margin-top:24px;
+
+    padding:18px 24px;
+
+    border-top:1px solid #e2e8f0;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+    background:#f8fafc;
+
+    border-radius:14px;
+
+    font-size:15px;
+
+    color:#475569;
+
+}
+
+.quadrant-footer span{
+
+    text-align:center;
+
+}
+
+.status{
+
+    font-weight:700;
+
+}
+
+.status.critical{
+
+    color:#dc2626;
+
+}
+
+.status.needs-improvement{
+
+    color:#ea580c;
+
+}
+
+.status.stable{
+
+    color:#2563eb;
+
+}
+
+.status.optimized{
+
+    color:#16a34a;
+
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media(max-width:1100px){
+
+    .quadrant-footer{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .quadrant-card{
+
+        padding:18px;
+
+    }
+
+    .quadrant-card h3{
+
+        font-size:24px;
+
+    }
+
+    .quadrant-footer{
+
+        grid-template-columns:1fr;
+
+        text-align:left;
+
+    }
+
+}

@@ -1,0 +1,51 @@
+.analytics-section{
+
+    margin-top:40px;
+
+}
+
+.analytics-section h2{
+
+    margin:0;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.analytics-section p{
+
+    margin:8px 0 28px;
+
+    color:#64748b;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+.analytics-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:24px;
+
+    align-items:stretch;
+
+}
+
+@media(max-width:1200px){
+
+    .analytics-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

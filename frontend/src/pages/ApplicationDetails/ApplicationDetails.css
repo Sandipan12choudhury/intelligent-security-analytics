@@ -1,0 +1,65 @@
+.details-page{
+
+    flex:1;
+
+    padding:30px;
+
+    background:#f4f7fc;
+
+    min-height:100vh;
+
+}
+
+.details-toolbar{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-bottom:18px;
+
+}
+
+.back-btn{
+
+    background:white;
+
+    border:1px solid #d7dfea;
+
+    padding:11px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.back-btn:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.details-loading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+
+    font-size:22px;
+
+    font-weight:600;
+
+}

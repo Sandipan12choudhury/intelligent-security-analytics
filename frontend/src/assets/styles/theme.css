@@ -1,0 +1,126 @@
+/* =============================================================================
+   Intelligent Security Analytics Platform
+   Enterprise Theme
+   Author : Sandipan Choudhury
+============================================================================= */
+
+:root {
+
+    /* =========================
+       Primary Brand Colors
+    ========================== */
+
+    --primary: #0B5ED7;
+    --primary-dark: #084298;
+    --primary-light: #EAF3FF;
+
+    /* =========================
+       Background Colors
+    ========================== */
+
+    --background: #F4F7FC;
+    --surface: #FFFFFF;
+    --surface-light: #F9FBFD;
+
+    /* =========================
+       Sidebar / Navigation
+    ========================== */
+
+    --navy: #0F172A;
+    --navy-light: #1E293B;
+
+    /* =========================
+       Text Colors
+    ========================== */
+
+    --text-primary: #111827;
+    --text-secondary: #6B7280;
+    --text-light: #9CA3AF;
+
+    /* =========================
+       Status Colors
+    ========================== */
+
+    --success: #16A34A;
+    --warning: #F59E0B;
+    --danger: #DC2626;
+    --info: #0284C7;
+
+    /* =========================
+       Borders
+    ========================== */
+
+    --border: #D9E2EC;
+
+    /* =========================
+       Card Shadow
+    ========================== */
+
+    --shadow-sm:
+        0 2px 8px rgba(15,23,42,.05);
+
+    --shadow:
+
+        0 8px 24px rgba(15,23,42,.08);
+
+    --shadow-lg:
+
+        0 20px 45px rgba(15,23,42,.15);
+
+    /* =========================
+       Border Radius
+    ========================== */
+
+    --radius-sm: 8px;
+    --radius: 14px;
+    --radius-lg: 20px;
+
+    /* =========================
+       Spacing
+    ========================== */
+
+    --space-xs: 6px;
+    --space-sm: 12px;
+    --space-md: 18px;
+    --space-lg: 28px;
+    --space-xl: 40px;
+
+    /* =========================
+       Typography
+    ========================== */
+
+    --font:
+
+        "Inter",
+        "Segoe UI",
+        sans-serif;
+
+    /* =========================
+       Transition
+    ========================== */
+
+    --transition:
+
+        all .25s ease;
+
+}
+
+/* =============================================================================
+   Dark Theme
+
+   Only the outer page canvas and sidebar shift to dark - content
+   cards deliberately stay light so every existing page (which sets
+   its own text colors directly) keeps guaranteed readability with
+   zero risk of low-contrast text. This still gives a real, visible
+   dark mode across the whole app.
+============================================================================= */
+
+[data-theme="dark"]{
+
+    --background: #0b1220;
+
+    --navy: #020617;
+
+    --navy-light: #0f172a;
+
+}
