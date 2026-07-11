@@ -1,0 +1,544 @@
+.reports-header{
+
+    margin-bottom:28px;
+
+}
+
+.reports-header h1{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    font-size:32px;
+
+    color:#0f172a;
+
+    font-weight:700;
+
+}
+
+.reports-header svg{
+
+    color:#2563eb;
+
+    font-size:26px;
+
+}
+
+.reports-header p{
+
+    margin-top:10px;
+
+    color:#64748b;
+
+    font-size:14.5px;
+
+    line-height:1.75;
+
+    max-width:780px;
+
+}
+
+.generate-report-card{
+
+    margin-bottom:24px;
+
+}
+
+.generate-report-card h2,
+.report-history-card h2{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:17px;
+
+    color:#0f172a;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.report-history-card h2 svg{
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+}
+
+/* ===================================================== */
+/* Report type selector - soft tint instead of solid fill */
+/* ===================================================== */
+
+.report-type-tabs{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+    background:#f8fafc;
+
+    padding:5px;
+
+    border-radius:12px;
+
+}
+
+.report-type-tabs button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    flex:1;
+
+    justify-content:center;
+
+    padding:12px;
+
+    border-radius:9px;
+
+    border:none;
+
+    background:transparent;
+
+    color:#64748b;
+
+    font-weight:600;
+
+    font-size:13.5px;
+
+    cursor:pointer;
+
+    transition:.18s;
+
+}
+
+.report-type-tabs button:hover{
+
+    color:#334155;
+
+}
+
+.report-type-tabs button.active{
+
+    background:#ffffff;
+
+    color:#1d4ed8;
+
+    box-shadow:0 1px 3px rgba(15,23,42,.12);
+
+}
+
+.report-scope-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+    margin-bottom:20px;
+
+}
+
+.form-field{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.form-field label{
+
+    font-size:12.5px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.form-field select{
+
+    height:46px;
+
+    border:1px solid #dbe4ee;
+
+    border-radius:9px;
+
+    padding:0 14px;
+
+    font-size:13.5px;
+
+    color:#334155;
+
+    background:#ffffff;
+
+    transition:.2s;
+
+}
+
+.form-field select:disabled{
+
+    background:#f8fafc;
+
+    color:#94a3b8;
+
+    cursor:not-allowed;
+
+}
+
+.form-field select:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.10);
+
+}
+
+/* ===================================================== */
+/* Primary CTA - the one place solid blue is used         */
+/* ===================================================== */
+
+.generate-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    border:none;
+
+    padding:13px;
+
+    border-radius:10px;
+
+    background:#1d4ed8;
+
+    color:white;
+
+    font-weight:600;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    width:100%;
+
+}
+
+.generate-btn:hover:not(:disabled){
+
+    background:#1e40af;
+
+}
+
+.generate-btn:disabled{
+
+    opacity:.55;
+
+    cursor:not-allowed;
+
+}
+
+.spin-icon{
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    from{ transform:rotate(0deg); }
+
+    to{ transform:rotate(360deg); }
+
+}
+
+/* ===================================================== */
+/* Report History                                          */
+/* ===================================================== */
+
+.history-empty{
+
+    color:#94a3b8;
+
+    font-size:13.5px;
+
+    padding:16px 0;
+
+}
+
+.history-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.history-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:16px;
+
+    padding:14px 16px;
+
+    border:1px solid #eef2f7;
+
+    border-radius:10px;
+
+    transition:.15s;
+
+}
+
+.history-item:hover{
+
+    border-color:#dbe4ee;
+
+    background:#fafbfc;
+
+}
+
+.history-item-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+/* Soft-tint badges instead of saturated solid fills */
+
+.report-type-badge{
+
+    padding:5px 12px;
+
+    border-radius:6px;
+
+    font-size:10.5px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.03em;
+
+    white-space:nowrap;
+
+}
+
+.report-type-badge.enterprise{
+
+    background:#f3e8ff;
+
+    color:#7e22ce;
+
+}
+
+.report-type-badge.department{
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+}
+
+.report-type-badge.application{
+
+    background:#cffafe;
+
+    color:#0e7490;
+
+}
+
+.history-label{
+
+    font-weight:600;
+
+    color:#0f172a;
+
+    font-size:13.5px;
+
+}
+
+.history-date{
+
+    color:#94a3b8;
+
+    font-size:12px;
+
+    margin-top:2px;
+
+}
+
+.history-item-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.redownload-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border:1px solid #dbe4ee;
+
+    background:#ffffff;
+
+    color:#334155;
+
+    padding:8px 15px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    font-size:12.5px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    white-space:nowrap;
+
+}
+
+.redownload-btn:hover:not(:disabled){
+
+    border-color:#2563eb;
+
+    color:#1d4ed8;
+
+}
+
+.redownload-btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+.delete-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:1px solid #fecaca;
+
+    background:#ffffff;
+
+    color:#dc2626;
+
+    width:34px;
+
+    height:34px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    font-size:12.5px;
+
+}
+
+.delete-btn:hover:not(:disabled){
+
+    background:#fef2f2;
+
+    border-color:#dc2626;
+
+}
+
+.delete-btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+@media(max-width:768px){
+
+    .report-type-tabs{
+
+        flex-direction:column;
+
+    }
+
+    .report-scope-row{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .history-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .history-item-actions{
+
+        width:100%;
+
+    }
+
+    .redownload-btn{
+
+        flex:1;
+
+        justify-content:center;
+
+    }
+
+}

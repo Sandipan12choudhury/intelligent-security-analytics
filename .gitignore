@@ -2,8 +2,8 @@
 venv/
 node_modules/
 database/
-reports/
-logs/
+/reports/
+/logs/
 __pycache__/
 *.pyc
 frontend/dist/
