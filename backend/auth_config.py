@@ -80,6 +80,22 @@ SMTP_PASSWORD = os.getenv("SMTP_PASSWORD")
 SMTP_FROM_EMAIL = os.getenv("SMTP_FROM_EMAIL") or SMTP_USERNAME
 
 # =============================================================================
+# Brevo (HTTP email API - works even on hosts that block SMTP ports,
+# e.g. Render's free tier blocks 25/465/587 outbound). Preferred over
+# raw SMTP whenever configured.
+# =============================================================================
+
+BREVO_API_KEY = os.getenv("BREVO_API_KEY")
+
+BREVO_SENDER_EMAIL = os.getenv("BREVO_SENDER_EMAIL") or SMTP_FROM_EMAIL
+
+BREVO_SENDER_NAME = os.getenv(
+
+    "BREVO_SENDER_NAME", "Intelligent Security Analytics Platform"
+
+)
+
+# =============================================================================
 # OTP
 # =============================================================================
 
