@@ -148,7 +148,7 @@ class AuthService:
 
             password_hash = _hash(password)
 
-            created_at = datetime.now().isoformat()
+            created_at = datetime.now(timezone.utc).isoformat()
 
             cursor = connection.execute(
 
@@ -587,7 +587,7 @@ class AuthService:
 
         expires_at = (
 
-            datetime.now() + timedelta(minutes=OTP_EXPIRY_MINUTES)
+            datetime.now(timezone.utc) + timedelta(minutes=OTP_EXPIRY_MINUTES)
 
         ).isoformat()
 
@@ -603,7 +603,7 @@ class AuthService:
             (
 
                 session_id, user_id, purpose, _hash(code),
-                expires_at, pending_value, datetime.now().isoformat()
+                expires_at, pending_value, datetime.now(timezone.utc).isoformat()
 
             )
 
@@ -666,7 +666,7 @@ class AuthService:
 
             )
 
-        if datetime.fromisoformat(session["expires_at"]) < datetime.now():
+        if datetime.fromisoformat(session["expires_at"]) < datetime.now(timezone.utc):
 
             raise AuthError(
 
@@ -767,7 +767,7 @@ class AuthService:
 
                 "UPDATE users SET last_login = ? WHERE id = ?",
 
-                (datetime.now().isoformat(), user["id"])
+                (datetime.now(timezone.utc).isoformat(), user["id"])
 
             )
 
@@ -843,7 +843,7 @@ class AuthService:
 
             expires_at = (
 
-                datetime.now() + timedelta(minutes=OTP_EXPIRY_MINUTES)
+                datetime.now(timezone.utc) + timedelta(minutes=OTP_EXPIRY_MINUTES)
 
             ).isoformat()
 

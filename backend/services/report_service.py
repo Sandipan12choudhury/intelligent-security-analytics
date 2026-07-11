@@ -21,7 +21,7 @@ Sandipan Choudhury
 import io
 import json
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from reportlab.lib.pagesizes import A4
@@ -418,7 +418,7 @@ def _page_decoration(canvas, doc):
 
         1.8 * cm, 0.9 * cm,
 
-        f"Generated {datetime.now().strftime('%d %b %Y, %H:%M')} "
+        f"Generated {datetime.now(timezone.utc).strftime('%d %b %Y, %H:%M')} "
         f"| Intelligent Security Analytics Platform - Confidential"
 
     )
@@ -913,7 +913,7 @@ class ReportService:
 
             "filename": filename,
 
-            "generated_at": datetime.now().isoformat()
+            "generated_at": datetime.now(timezone.utc).isoformat()
 
         })
 

@@ -24,7 +24,7 @@ Sandipan Choudhury
 """
 
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
@@ -413,7 +413,7 @@ class ObservationService:
 
             **observation,
 
-            "created_at": datetime.now().isoformat()
+            "created_at": datetime.now(timezone.utc).isoformat()
 
         })
 

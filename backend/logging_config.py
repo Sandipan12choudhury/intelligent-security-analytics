@@ -34,7 +34,7 @@ Sandipan Choudhury
 
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
@@ -55,7 +55,7 @@ class JsonFormatter(logging.Formatter):
 
         payload = {
 
-            "timestamp": datetime.now().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
 
             "level": record.levelname,
 

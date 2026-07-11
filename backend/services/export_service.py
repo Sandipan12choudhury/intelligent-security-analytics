@@ -22,7 +22,7 @@ Sandipan Choudhury
 
 import csv
 import io
-from datetime import datetime
+from datetime import datetime, timezone
 
 from docx import Document
 from docx.shared import Pt, RGBColor
@@ -270,7 +270,7 @@ class ExportService:
             Paragraph(
 
                 f"Generated on "
-                f"{datetime.now().strftime('%d %b %Y, %H:%M')} "
+                f"{datetime.now(timezone.utc).strftime('%d %b %Y, %H:%M')} "
                 f"by Intelligent Security Analytics Platform (AI-assisted).",
 
                 ParagraphStyle(
@@ -353,7 +353,7 @@ class ExportService:
         footer = document.add_paragraph(
 
             f"Generated on "
-            f"{datetime.now().strftime('%d %b %Y, %H:%M')} "
+            f"{datetime.now(timezone.utc).strftime('%d %b %Y, %H:%M')} "
             f"by Intelligent Security Analytics Platform (AI-assisted)."
 
         )
