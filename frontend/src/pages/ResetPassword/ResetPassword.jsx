@@ -210,9 +210,7 @@ export default function ResetPassword() {
 
                             <FaMobileAlt style={{ marginRight: 8 }} />
 
-                            Enter the code sent to {maskedPhone}
-
-                            {maskedEmail && ` and ${maskedEmail}`}
+                            Enter the code sent to {maskedEmail}
 
                         </p>
 

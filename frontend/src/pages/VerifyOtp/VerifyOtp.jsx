@@ -15,7 +15,7 @@ import usePageTitle from "/src/utils/usePageTitle";
 import {
 
     FaShieldAlt,
-    FaMobileAlt,
+    FaEnvelope,
     FaArrowRight,
     FaSpinner
 
@@ -35,7 +35,7 @@ export default function VerifyOtp() {
 
     const state = location.state || {};
 
-    const { otpSessionId, maskedPhone, purpose } = state;
+    const { otpSessionId, maskedPhone, maskedEmail, purpose } = state;
 
     const [digits, setDigits] = useState(["", "", "", "", "", ""]);
 
@@ -259,9 +259,9 @@ export default function VerifyOtp() {
 
                         <p>
 
-                            <FaMobileAlt style={{ marginRight: 8 }} />
+                            <FaEnvelope style={{ marginRight: 8 }} />
 
-                            We've sent a 6-digit code to {maskedPhone}
+                            We've sent a 6-digit code to {maskedEmail}
 
                             {
 

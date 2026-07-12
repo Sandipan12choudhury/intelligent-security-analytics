@@ -85,6 +85,7 @@ export default function Login() {
                         otpSessionId: data.otp_session_id,
 
                         maskedPhone: data.masked_phone,
+                        maskedEmail: data.masked_email,
 
                         purpose: "login"
 
